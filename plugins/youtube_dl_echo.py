@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K | X-Noid | @DC4_WARRIOR
-
+from helperfunc.forcesub import ForceSub
 # the logging things
 import logging
 logging.basicConfig(level=logging.DEBUG,
@@ -28,8 +28,11 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
-
-
+@Clinton.on_message(filters.private & filters.regex(pattern=".*http.*"))
+async def echo(bot, update):
+    forcesub = await ForceSub(bot, update)
+    if forcesub == 400:
+        return
     imog = await update.reply_text("Processing...⚡", reply_to_message_id=update.message_id)
     youtube_dl_username = None
     youtube_dl_password = None
