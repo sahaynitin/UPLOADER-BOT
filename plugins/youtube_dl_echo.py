@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K | X-Noid | @DC4_WARRIOR
-from helperfunc.forcesub import ForceSub
+from helperfuncs.forcesub import ForceSub
 # the logging things
 import logging
 logging.basicConfig(level=logging.DEBUG,
