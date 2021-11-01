@@ -66,16 +66,13 @@ async def button(bot, update):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🤖 Update Channel", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("💬 Support Group", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
-						InlineKeyboardButton("🗣️ 𝐇𝐞𝐥𝐩 ", callback_data="help")
-					], 
-                                        [
-						InlineKeyboardButton("🌐 𝐆𝐢𝐭𝐡𝐮𝐛 ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("📢 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲", url="https://t.me/MoviesFlixers_DL")
+						InlineKeyboardButton("👲 About ", callback_data="aboutbot"),
+						InlineKeyboardButton("❔ Help ", callback_data="help")
+					]
 	            ]
                 ]
             )
